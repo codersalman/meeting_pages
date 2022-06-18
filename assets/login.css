@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Estonia&family=Poppins:wght@200;400&family=Ubuntu&display=swap');
+
+*{
+    background: #2c2c2c;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: .7px;
+    color:white;
+}
+
+body{
+    width: 35%;
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+div.main{
+    border: solid 1px;
+    border-radius: 10px;
+    padding: 30px;
+    width: 45%;
+    height: 45%;
+}
+
+h2:first-of-type{
+    font-size: 36px;
+    letter-spacing: 1.5px;
+    color: white;
+}
+
+form::not(label){
+    text-align: center;
+}
+
+.form{
+    border-radius: 10px;
+    padding: 30px 20px;
+    color: #7c7c7c;
+    border: solid 1px #b8b8b8;
+    background-color: #7c7c7c;
+}
+
+.form h2{
+    font-size: 28px;
+    letter-spacing: 1.5px;
+    margin: 20px;
+    text-align: center;
+}
+
+.form h2 img{
+    background-color: #7c7c7c;
+}
+
+form label{
+    text-align: left;
+    font-size: 16px;
+    padding-left: 55px;
+}
+
+input{
+    width: 300px;
+    margin: 10px 0 10px 10px;
+    padding: 10px;
+    background-color: #5c5c5c;
+    border: 1px solid #b8b8b8;
+    border-radius: 5px;
+    /*text-align: center;*/
+    display: block;
+    margin:auto;
+}
+
+.bg{
+    background-color: #7c7c7c;
+}
+
+.bg span{
+    background-color: #7c7c7c;
+}
+
+::placeholder{
+    text-align: left;
+    color: #b8b8b8;
+}
+
+button{
+    background-color: #5c5c5c;
+    border: 1px solid #b8b8b8;
+    padding: 8px 20px;
+    margin-top: 30px;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+}
+
+button:hover{
+    background-color: #b8b8b8;
+    color: #5e5c5c;
+}
+
+@media (max-width:500px) and (min-width:100px){
+    body{
+        width:100vw;
+        height:100vh;
+    }
+    section{
+        width:100vw;
+        
+    }
+    h2{
+        text-align: center;
+    }
+    .form{
+        margin: 40px;
+        width:80vw;  
+    }
+    input{
+        width:60vw;
+    } 
+    form label{
+        padding-left: 25px;
+    }
+}
+
+@media (min-width:500px) and (max-width:1275px){
+    form label{
+        padding-left: 8px;
+    }
+}
+
+@media (min-width:1019px) and (max-width:1285px){
+    form label{
+        padding-left: 25px;
+    }
+}

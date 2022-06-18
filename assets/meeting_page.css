@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Estonia&family=Poppins:wght@200;400&family=Ubuntu&display=swap');
+
+*{
+    background: #2c2c2c;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+    color:white;
+}
+
+body{
+    background-color: #2c2c2c;
+}
+
+
+
+.sorry_text{
+color: #fff;
+display: none;
+text-align: center;
+}
+#meeting{
+
+    border-radius:10px;
+}
+
+.timer{
+    text-align: right;
+    font-size: 18px;
+    margin-right: 20px;
+    padding-top: 10px;
+    color: #7c7c7c;
+}
+
+.meet{
+    padding: 0 0 0 20px;
+    font-weight: 600;
+    font-size: 22px;
+    margin-left: 3.5%;
+}
+
+.meet span img{
+    margin-bottom: -5px;
+}
+
+.meet button{
+    background-color: #d03333;
+    font-size: 13px;
+    padding: 3px 12px;
+    border-radius: 8px;
+    border: .5px solid rgb(187, 185, 185);
+    margin-left: 10px;
+    transition: 1s;
+}
+
+.meet button:hover{
+    background-color: #e99393;
+    cursor: pointer;
+}
+
+.main{
+    border-radius: 10px;
+    height: 80vh;
+    width: 90vw;
+    display: block;
+    margin: auto;
+    background-color: #040404;
+    border: 1px rgb(170, 167, 167) solid;
+    margin-top: 15px;
+}
+
+.main *{
+    background-color: #040404;
+    padding: 5px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.part{
+    margin: 10px;
+}
+
+.part1 span img{
+    margin-bottom: -5px;
+    margin-right: 5px;
+    padding: 0;
+}
+
+.part2 span img{
+    margin-bottom: -3px;
+    padding: 0;
+    color: #7c7c7c;
+}
+
+.part3 *{
+    background: #292929;
+    border-radius: 5px;
+    
+}
+
+.part3 .name{
+    font-size: 22px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    background: #e8765f;
+    height: 40px;
+    width: 40px;
+    padding: 3px;
+}
+
+.part3 div:first-of-type{
+    padding: 5px;
+}
+
+.part3 div:not(:first-of-type){
+    background-color: #292929b9;
+    position: relative;
+    bottom:20px;
+    font-size: 10px;
+}
+
+.part3 img{
+    margin-bottom: -3px;
+    padding: 0;
+    background-color: #292929b9;
+}
+
+
+#spinner-div {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding-top: 18rem;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 2;
+}
+.center{
+    font-size: 6rem;
+    text-align: center;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    background: #e8765f;
+    height: 180px;
+    width: 180px;
+    padding: 15px;
+    transform: translate(0%,30%);
+}
+
+.bar *{
+    background-color: #2c2c2c;
+    padding: 2px;
+    font-size: 20px;
+    
+}
+
+.bar{
+    display: flex;
+    align-items: center;
+    justify-content:end;
+    margin-top: 12%;
+    max-width: 65vw;
+    border-radius: 10px;
+}
+
+.icon{
+    padding: 10px;
+
+}
+
+.bar .icon span img{
+    transform: translateY(-100%);
+    padding: 0;
+}
+
+
+@media (max-width: 575.98px) {.sorry_text{ 
+ visibility:visible;
+display: block;
+}
+}
+
+
+@media (max-width: 575.98px) {#meeting{ 
+display: none;}
+}
+
+
+

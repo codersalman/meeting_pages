@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+    background-color: #000000; 
+}
+section{
+    position: relative;  
+}
+h2{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 1000;
+    position: absolute;
+    top: 120px;
+    left: 500px;
+    color: white; 
+}
+form{
+    background: #7C7C7C;
+    position: absolute;
+    top:250px;
+    left:550px;
+    width: 500px;
+    border: 1px solid #CDCDCD;
+    border-radius: 10px;
+    height: 50vh;
+}
+h4{
+    font-size: 28px;
+    text-align: center;
+    padding: 30px 0px;
+    color: white;
+    background: #7C7C7C;
+    margin-top: 20px;
+}
+.join{
+    font-size: 30px;
+    text-align: center;
+    padding: 30px 0px;
+    letter-spacing: 1px;
+    color: white;
+    background: #7C7C7C;
+    font-weight: 900;
+}
+p{
+    color: white;
+    background: #7C7C7C;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 34px;
+    margin-left: 60px;
+    padding-bottom:5px ;
+}
+input{
+    font-size: 14px;
+    line-height: 28px;
+    color: #FFFFFF;
+    border: 1px solid #CDCDCD;
+    border-radius: 5px;
+    width: 70%;
+    padding: 10px;
+    margin-left: 60px;
+    margin-bottom: 10px;
+    background: #5C5C5C;
+}
+input::placeholder{
+    color: white; 
+}
+input:hover{
+    transform: scale(1.01);
+}
+button{
+    position: absolute;
+    top: 250px;
+    left: 130px;
+    margin-left: 60px;
+    width: 120px;
+    color: white;
+    background: #5C5C5C;
+    border: 1px solid #CDCDCD;
+    border-radius: 3px;
+    padding: 10px 12px;
+    margin-bottom:10px;
+}
+button:hover{
+    transform: scale(1.1);
+    box-shadow: #000000;
+}
+input:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+
+/* --media queries --*/
+@media (max-width: 575.98px) { 
+    h2{
+        font-size: 23px;
+        top: 100px;
+        left:35px;
+    } 
+    form{
+        top:200px;
+        left:50px;
+        width: 80%;
+        height: 55vh;
+    }
+    .join{
+        font-size: 20px;
+    }
+    h4{
+        font-size: 20px;
+    }
+    p,input,button{
+        margin-left: 20px;
+    }
+    input{
+        width: 60vw;
+    }
+    button{
+        top: 230px;
+        left: 70px;
+    }
+}
+
+@media (min-width: 575.98px) and (max-width: 767.98px) { 
+h2{
+    font-size: 35px;
+    top: 40px;
+    left:100px;
+}
+form{
+    top:130px;
+    left:150px;
+    width: 400px;
+    height: 65vh;
+}
+p,input,button{
+    margin-left: 20px;
+}
+button{
+    top: 235px;
+    left: 90px;
+}
+ }
+ 
+@media (min-width: 767.98px) and (max-width: 991.98px){
+    h2{
+        font-size: 40px;
+        top: 100px;
+        left:100px;
+    } 
+    form{
+        top:250px;
+        left:120px;
+        width: 550px;
+        height: 58vh;
+    }
+    button{
+        width: 200px;
+        top: 270px;
+        left: 90px;
+    }
+}
+@media (min-width: 991.98px) and (max-width: 1199.98px){
+    h2{
+        font-size: 40px;
+        top: 100px;
+        left:230px;
+    } 
+    form{
+        top:230px;
+        left:230px;
+        width: 550px;
+        height: 50vh;
+    }
+}
+@media (min-width: 1199.98px) and (max-width: 1399.98px){
+    h2{
+        left:350px;
+    } 
+    form{
+        left:350px;
+        width:600px ;
+       
+    }
+}

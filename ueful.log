@@ -1,0 +1,35 @@
+  <!--   <div class="container">
+                <div class="part part1">
+                    <span>
+                        <img src="./images/jitsi.png" width="20px" height="20px">jitsi
+                    </span>
+                </div>
+                <div class="part part2">
+                    <span>
+                        Written Creatures Say Mysteriously 01:13
+                        <img src="./images/timer.png" width="20px" height=20px" alt="">
+                    </span>
+                </div>
+                <div class="part part3">
+                    <div>
+                        <div class="name">RS</div>
+                    </div>
+                    <div><span><img src="./images/mute-microphone.png" width="12px" height="12px"></span>Rafikh Sharma</div>
+                </div>
+            </div>
+
+            <div class="name center">
+                RS
+            </div>
+
+            <div class="bar">
+                <div class="icon"><img src="./images/mute-microphone.png" width="30px" height="30px"><span><img src="./images//arrow-up.png" width="20px" height="20px"></span></div>
+                <div class="icon"><img src="./images/no-video.png" width="30px" height="30px"><span><img src="./images/arrow-up.png" width="20px" height="20px"></span></div>
+                <div class="icon"><img src="./images/screen.png" width="30px" height="30px"></div>
+                <div class="icon"><img src="./images/message.png" width="30px" height="30px"></div>
+                <div class="icon"><img src="./images/hand.png" width="30px" height="30px"><span><img src="./images/arrow-up.png" width="20px" height="20px"></span></div>
+                <div class="icon"><img src="./images/user.png" width="30px" height="30px"></div>
+                <div class="icon"><img src="./images/squares.png" width="30px" height="30px"></div>
+                <div class="icon"><img src="./images/more.png" width="30px" height="30px"></div>
+                <div class="icon"><img src="./images/phone-call-end.png" width="30px" height="30px"></div>
+            </div> -->

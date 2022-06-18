@@ -1,0 +1,139 @@
+/*body {
+    background-color: rgb(55, 53, 53);
+    max-width: 900px;
+    width: 90%;
+ }*/
+ body{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color:#3c3c3c;
+}
+
+table{
+    width: 900px;
+    height: 400px;
+    border-radius: 20px 20px 0 0;
+    font-size:15px;
+    text-align: center;
+    color: white; 
+    background-color:#7c7c7c;
+    border-collapse: separate;
+    border-spacing: 0 1em; 
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+td{
+    height:15px;
+}
+/*Set border-radius on the top-left and bottom-left of the first table data on the table row*/
+td:first-child{
+  border-radius: 10px 0 0 10px;
+}
+
+/* Set border-radius on the top-right and bottom-right of the last table data on the table row*/
+td:last-child {
+  border-radius: 0 10px 10px 0;
+}
+
+
+.first{
+    height:35px;
+}
+.row{
+    
+    background-color: rgb(55, 53, 53);
+    
+}
+.row td{
+    margin-right: 25px;
+   
+}
+.host {
+    color: white;
+    background-color: rgb(76, 73, 73);
+    width: 200px;
+    height: 35px;
+    border: white solid 1px;
+    border-radius: 7px;
+    margin:10px;
+}
+img{
+    height:20px;
+    margin-right:5px;
+}
+
+.actions{
+    width:100px;
+}
+.join {
+    text-align: center;
+    font-size:small;
+    color: white;
+    background-color:#5c5c5c;
+    width: 60px;
+    height: 25px;
+    margin:5px;
+    border-radius: 50px;
+   border-color: azure;
+}
+a:hover{
+    cursor: pointer;
+}
+.head {
+   padding: 20px;
+}
+.delete {
+    text-align: center;
+    font-size:small;
+    color: white;
+    background-color:#e62f42;
+    width: 60px;
+    height: 25px;
+    border-color: azure;
+    border-radius: 50px;
+    margin-right: 4px;
+}
+section{
+    border-radius: 10px;
+    background-color: #7c7c7c;
+}
+
+/*responsive*/
+@media (max-width:500px) and (min-width:100px){
+    body{
+        width:100vw;
+        height:100vh;
+        margin:0px;
+    }
+    section{
+        width:90vw;
+    }
+    table{
+        width:90vw;
+        padding:4px;
+        padding-bottom: 30px;
+        font-size:smaller;
+    }
+    tbody{
+        width:90vw;
+    }
+    .head{
+        padding:0px;
+    }
+    td{
+        padding-right:5px;
+    }
+    tr{
+        width:90vw;
+    }
+}
