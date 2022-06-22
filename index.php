@@ -17,7 +17,7 @@ include "config.php";
 <div id="date_time" class="top">
 </div>
 <section>
-    <h2>&#128515;Good Morning! Interns</h2>
+    <h2>&#128515;<label id="lblGreetings"></label>! Interns</h2>
     <table>
         <tr>
             <th>&#129299;Meeting Title</th>
@@ -76,7 +76,20 @@ include "config.php";
         return i;
     }
 
+</script>
+<script>
+var myDate = new Date();
+var hrs = myDate.getHours();
 
+var greet;
+if (hrs < 12)
+    greet = 'Good Morning';
+else if (hrs >= 12 && hrs <= 17)
+    greet = 'Good Afternoon';
+else
+    greet = 'Good Evening';
+
+document.getElementById('lblGreetings').innerHTML = '<b>' + greet + '</b>';
 </script>
 </body>
 </html>

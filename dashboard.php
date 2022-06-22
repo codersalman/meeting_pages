@@ -56,8 +56,8 @@ include "auth.php";
                 <td><?php echo $data1['Meeeting_title']; ?></td>
                 <td><?php echo $data1['Team']; ?></td>
                 <td><span>⏰</span><?php echo $data1['Meeting_time']; ?></td>
-                <td><a href="join.php?id=<?php echo $key; ?>" class="join button">Join</a>
-                    <a href="delete.php?id=<?php echo $key; ?>" class="delete">Delete</button></td>
+                <td><button class="join"><a href="join.php?id=<?php echo $key; ?>" >Join</a></button>
+                    <button class="delete"><a href="delete.php?id=<?php echo $key; ?>" >Delete</a></button></td>
             </tr>
             <?php
         }

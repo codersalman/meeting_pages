@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/login.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@5/dark.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@5/dark.css" />
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
     <title>LOGIN</title>
 </head>
+
+
 <body>
-<section>
-    <h2>😃 Good Morning, Admin </h2>
-    <br>
-    <div class="form bg">
-        <h2 class="bg"><span>🔐</span> LOGIN</h2>
-        <form class="bg" action="#">
-            <label class="bg" style="text-align: left;">Email</label><br>
-            <input type="email"name="email" placeholder="Enter Your Email Address">
-            <br>
-            <label class="bg" style="text-align: left;">Password</label><br>
-            <input type="password" name="password" placeholder="Enter Your Password Here">
-            <br>
-            <button type="submit" id="login">LOGIN</button>
-        </form>
-    </div>
+    <section>
+        <h2>😃 <label id="lblGreetings"></label>, Admin </h2>
+        <br>
+        <div class="form bg">
+            <h2 class="bg"><span>🔐</span> LOGIN</h2>
+            <form class="bg" action="#">
+                <label class="bg" style="text-align: left;">Email</label><br>
+                <input type="email" name="email" placeholder="Enter Your Email Address">
+                <br>
+                <label class="bg" style="text-align: left;">Password</label><br>
+                <input type="password" name="password" placeholder="Enter Your Password Here">
+                <br>
+                <button type="submit" id="login">LOGIN</button>
+            </form>
+        </div>
 
 
-    <script>const Toast = Swal.mixin({
+        <script>
+        const Toast = Swal.mixin({
             toast: true,
             position: 'top',
             showConfirmButton: false,
@@ -39,13 +43,25 @@
                 toast.addEventListener('mouseleave', Swal.resumeTimer)
             }
         })
-    </script>
-</section>
-<script>
 
 
-    $(function () {
-        $('#login').bind('click', function (event) {
+var myDate = new Date();
+var hrs = myDate.getHours();
+
+var greet;
+if (hrs < 12)
+    greet = 'Good Morning';
+else if (hrs >= 12 && hrs <= 17)
+    greet = 'Good Afternoon';
+else
+    greet = 'Good Evening';
+
+document.getElementById('lblGreetings').innerHTML = '<b>' + greet + '</b>';
+        </script>
+    </section>
+    <script>
+    $(function() {
+        $('#login').bind('click', function(event) {
 
             // using this page stop being refreshing
             event.preventDefault();
@@ -58,7 +74,7 @@
                 url: 'do_login.php',
                 data: $('form').serialize(),
 
-                success: function (response) {
+                success: function(response) {
 
                     $("#spinner-div").hide(); //Request is complete so hide spinner
                     var jsonData = JSON.parse(response);
@@ -72,7 +88,7 @@
                             Toast.fire({
                                 icon: 'success',
                                 title: 'Logged in successfully 🥳 '
-                            }).then(function () {
+                            }).then(function() {
                                 window.location = "dashboard.php";
                             });
                             break;
@@ -80,7 +96,7 @@
                             Toast.fire({
                                 icon: 'warning',
                                 title: 'Your Account is Banned 😕'
-                            }).then(function () {
+                            }).then(function() {
                                 //
                             });
                             break;
@@ -88,7 +104,7 @@
                             Toast.fire({
                                 icon: 'warning',
                                 title: 'The password you entered is incorrect 😐'
-                            }).then(function () {
+                            }).then(function() {
                                 //
                             });
                             break;
@@ -96,7 +112,7 @@
                             Toast.fire({
                                 icon: 'info',
                                 title: 'Use at least 6 characters password 😐'
-                            }).then(function () {
+                            }).then(function() {
 
                             });
                             break;
@@ -104,7 +120,7 @@
                             Toast.fire({
                                 icon: 'warning',
                                 title: ' Access to this account has been temporarily disabled due to many failed login attempts 😐'
-                            }).then(function () {
+                            }).then(function() {
                                 //
                             });
                             break;
@@ -112,14 +128,14 @@
                             Toast.fire({
                                 icon: 'info',
                                 title: 'User Not Found 🥲'
-                            }).then(function () {
+                            }).then(function() {
                                 //
                             });
                     }
 
                 }
             });
-            Error(function (XMLHttpRequest, textStatus, errorThrown) {
+            Error(function(XMLHttpRequest, textStatus, errorThrown) {
                 alert("Try Again " + textStatus);
                 $("#spinner-div").hide(); //Request is complete so hide spinner
 
@@ -128,8 +144,7 @@
 
         });
     });
-
-
-</script>
+    </script>
 </body>
+
 </html>
