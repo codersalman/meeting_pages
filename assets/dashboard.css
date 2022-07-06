@@ -18,7 +18,7 @@
 
 table{
     width: 900px;
-    height: 400px;
+    height: 300px;
     border-radius: 20px 20px 0 0;
     font-size:15px;
     text-align: center;
@@ -32,9 +32,7 @@ table{
 }
 
 
-td{
-    height:15px;
-}
+
 /*Set border-radius on the top-left and bottom-left of the first table data on the table row*/
 td:first-child{
   border-radius: 10px 0 0 10px;
@@ -52,6 +50,7 @@ td:last-child {
 .row{
     
     background-color: rgb(55, 53, 53);
+ 
     
 }
 .row td{
@@ -75,10 +74,10 @@ img{
 .actions{
     width:100px;
 }
-.join {
+.join{
     text-align: center;
-    font-size:small;
-    color: white;
+    font-size:15px;
+    color:white;
     background-color:#5c5c5c;
     width: 60px;
     height: 25px;
@@ -86,15 +85,19 @@ img{
     border-radius: 50px;
    border-color: azure;
 }
+a{
+   color:white;
+}
 a:hover{
     cursor: pointer;
+    color:blue;
 }
 .head {
    padding: 20px;
 }
 .delete {
     text-align: center;
-    font-size:small;
+    font-size:15px;
     color: white;
     background-color:#e62f42;
     width: 60px;

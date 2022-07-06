@@ -44,15 +44,17 @@ table, th, td {
     background-color: dimgray;
     text-align: center;
    
-  } 
+  }
+
 .join{
     border: 1px solid  #CDCDCD;
-    border-radius: 11px;
+    border-radius: 15px;
     height: 35px;
     width: 100px;
     background: #5C5C5C;
     text-transform: uppercase;
     font-size: 18px;
+    padding:3px;
 }
 .border{
    border-bottom:1px solid #CDCDCD;
